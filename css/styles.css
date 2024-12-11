@@ -356,6 +356,16 @@ cursor: pointer;
     justify-content: center;
 }
 
+.social-media-circle {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+
+.social-media-circle:hover,
+.social-media-circle:focus {
+    background-color: #31D0AA;
+}
+
 .social-media-item {
     width: 40px;
     height: 40px;
@@ -402,27 +412,25 @@ cursor: pointer;
     overflow: hidden;
 }
 
-.overlay {
-    background-color: #4D5AE5;
-    color: #F4F4FD;
+.portfolio-overlay-text {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 40px 32px 40px 32px;
-    transform: translateY(100%);
-    transition: transform 250ms ease-in-out;
-}
-
-.portfolio-overlay-text {
+    padding: 40px 32px;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: left;
+    background-color: #4D5AE5;
+    color: #F4F4FD;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.overlay-box:hover .overlay {
-    transform: translateY(0);
+.overlay-box:hover .portfolio-overlay-text {
+    transform: translateY(0%);
 }
 
 /* #endregion Portfolio */
@@ -436,11 +444,13 @@ cursor: pointer;
     max-width: 264px;
 }
 
-.header-footer {
+.footer-social-title {
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
     font-weight: 500;
+    margin-bottom: 16px;
 }
 
 .footer  {
@@ -456,24 +466,17 @@ cursor: pointer;
 
 .footer-flex-container {
     display: flex;
-    justify-content: start;
-    gap: 120px;
+    align-items: baseline;
+}
+
+.footer-container-one {
+    margin-right: 120px;
 }
 
 .social-media-box-footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 24px;
-    padding-top: 16px;
-}
-
-.social-media-box-footer .social-media-circle {
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-}
-
-
-.social-media-box-footer .social-media-circle:hover {
-background-color: #31D0AA;
+    gap: 16px;
 }
 /* #endregion Footer*/
