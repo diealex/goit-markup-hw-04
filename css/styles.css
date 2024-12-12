@@ -121,7 +121,7 @@ body {
 .nav-link-flex {
     display: flex;
     gap: 40px;
-    padding-top: 24px;
+    padding: 24px;
 }
 
 .nav-link {
@@ -190,7 +190,7 @@ body {
     background-image: linear-gradient(to bottom,
             rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
-            url('../images/hero-bg.png');
+            url('../images/hero-bg.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
